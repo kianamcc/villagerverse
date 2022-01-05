@@ -23,7 +23,7 @@ function App() {
 
   useEffect(()=> {
     setLoading(true);
-    fetch('http://acnhapi.com/v1a/villagers/')
+    fetch('https://acnhapi.com/v1a/villagers/')
       .then(response => response.json())
       .then(users => {setvillager(users)});
       setLoading(false);
@@ -39,7 +39,7 @@ function App() {
     setShowDetails(true);
     console.log(showDetails)
     setLoading(true);
-    fetch(`http://acnhapi.com/v1a/villagers/${id}`)
+    fetch(`https://acnhapi.com/v1a/villagers/${id}`)
       .then(response=> response.json())
       .then(data => {
         setLoading(false);
