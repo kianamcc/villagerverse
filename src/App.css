@@ -1,38 +1,49 @@
 .App {
-  text-align: center;
+  font-family: 'acfont', sans-serif; 
+  margin-bottom: 0;
+  padding: 0;
+  background-image: url('./acbkg.png');
+  min-width: 100%;
+  min-height: 100%;
+  background-size: contain;
+  /* background-repeat: repeat; */
+  /* background-position: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@font-face {
+  font-family: 'acfont';
+  font-style: normal;
+  font-weight: normal;
+  src: local('acfont'), url(FinkHeavy.woff) format('woff');
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .header {
+    font-family: 'acfont', sans-serif;  
+    color: yellow;
+    background-color: #40916c;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+      font-weight: 500;
   }
-}
+
+  p {
+    font-weight: 100;
+  }
+
+  .inputcontainer {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    gap: 10px;
+  }
+
+  .loading {
+    font-family: 'acfont', sans-serif;  
+    color: yellow;
+  }

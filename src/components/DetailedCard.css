@@ -1,0 +1,96 @@
+.DetailedCard {
+    width: 85vw;
+    height: 60vh;
+    background-image: url('cardbkg.png');
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* Responsive layout - makes a one column layout instead of a two-column layout */
+}
+
+@media (max-width: 800px) {
+    .DetailedCard {
+        width: 80vw;
+        height: 92vh;
+        justify-content: center;
+        align-items: center;
+        background-size: contain;
+        gap: 0px;
+    }
+  }
+
+.villagerimg {
+    width: 100%;
+    margin: 20px;
+    flex: 1.2;
+    object-fit: contain;
+    resize: both;
+    flex: 0 0 30%;
+}
+
+@media (max-width: 500px) {
+    .villagerimg {
+      width: 50vw;
+    }
+  }
+
+.datacontainer {
+    width: 100%;
+    margin: 20px;
+    flex: 2;
+    /* flex: 0 0 50%; */
+}
+
+@media (max-width: 700px) {
+    .datacontainer {
+        width: 70vw;
+        flex: 5;
+            /* flex: 0 0 50%; */
+    }
+  }
+
+.btn {
+    flex: 0.2;
+}
+
+@media (max-width: 700px) {
+    .btn {
+        flex: 0.05;
+    }
+  }
+
+.textbody {
+    font-size: 0.7rem;
+    margin: 5px;
+}
+
+.key {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-weight: 600;
+    /* background-color: green; */
+}
+
+@media (max-width: 700px) {
+    .key {
+        font-size: 1.3rem;
+        width: 50%;
+    }
+  }
+
+.val {
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+.name {
+    font-weight: 600;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px;
+}

@@ -1,0 +1,9 @@
+.card {
+    background-image: url('cardbkg.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+h3 {
+    padding: 6px;
+}
