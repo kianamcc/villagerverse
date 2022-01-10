@@ -1,18 +1,11 @@
-// import logo from './logo.svg';
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import SearchBox from './components/SearchBox.js';
 import CardList from './components/CardList.js';        
-// import FilterByPersonality from './components/FilterByPersonality';
 import DetailedCard from './components/DetailedCard';
 import DetailedCardHelper from './components/DetailedCardHelper';
 
-// import { useTheme } from '@material-ui/styles';
-// import { useMediaQuery } from '@material-ui/core/';
-
-
 function App() {
-
   // react hooks useState uses array destructuring to allow us to name our state whatever we want
   // useState returns a array. Initial state is an empty array. villager is the state, setCharacter is the fct that changes the state.
   const [villagers, setvillager] = useState([]);
